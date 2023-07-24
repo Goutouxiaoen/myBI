@@ -78,6 +78,7 @@ public class ChartController {
         boolean result = chartService.save(chart);
         ThrowUtils.throwIf(!result, ErrorCode.OPERATION_ERROR);
         long newChartId = chart.getId();
+
         return ResultUtils.success(newChartId);
     }
 
