@@ -8,9 +8,10 @@ import java.util.Date;
 
 /**
  * 图表信息表
+ *
  * @TableName chart
  */
-@TableName(value ="chart")
+@TableName(value = "chart")
 @Data
 public class Chart implements Serializable {
     /**
@@ -24,7 +25,7 @@ public class Chart implements Serializable {
      */
     private String goal;
 
-     /**
+    /**
      * 图表名称
      */
     private String name;
@@ -63,6 +64,17 @@ public class Chart implements Serializable {
      * 更新时间
      */
     private Date updateTime;
+
+    /**
+     * 任务状态
+     */
+    private String status;
+
+    /**
+     * 执行信息
+     */
+    private String execMessage;
+
 
     /**
      * 是否删除
